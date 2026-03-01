@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(227, 230, 231);
+        margin: 200px;
+        background-image:url("flo.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    form{
+        background-color:  #e6e0f8;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 50px rgb(0, 0, 0);
+        width: 400px;
+    opacity: 0.8;
+    }
+    input[type="submit"]{
+        width: 100%;
+        padding: 10px;
+        background-color: #6c63ff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover{
+        background-color: #574bdb;
+        transform: scale(1.05);
+    }
+    legend{
+        color: rgb(238, 10, 223)  ;
+        background-color: rgb(12, 12, 12);
+        padding: 5px 10px;
+        border-radius: 10px 0.5px;
+    }
+    table{
+        width: 100%;
+        border-collapse: 10px;
+
+    }
+    td{
+        vertical-align: top;
+    }
+    input,select,textarea{
+        width: 80%;
+        padding: 8px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    input[type="radio"],input[type="checkbox"]{
+        width: auto;
+    }
+  </style> </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>HTML Form</legend>
+        <table>
+          <tr>
+            <td><label>Name:</label></td>
+            <td><input type="text" placeholder="Enter The Name" /></td>
+          </tr>
+          <tr>
+            <td><br /></td>
+          </tr>
+          <td><label>Email:</label></td>
+          <td><input type="email" placeholder="Enter The Email" /></td>
+          <tr>
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password" placeholder="Enter The Password" /></td>
+          </tr>
+          <tr>
+            <td><br /></td>
+          </tr>
+
+          <tr>
+            <td><label>Phone No:</label></td>
+            <td><input type="text" placeholder="Enter The Phone No" /></td>
+          </tr>
+          <tr>
+            <td><br /></td>
+          </tr>
+
+          <tr>
+            <td><label>DOB:</label></td>
+            <td><input type="date" placeholder="Enter The DOB" /></td>
+          </tr>
+          <tr>
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <select>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td><label for=""> Gender: </label></td>
+            <td><input type="radio" name="gender" value="male" />Male</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="radio" name="gender" value="female" />Female</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="radio" name="gender" value="other" />Other</td>
+          </tr>
+            <tr>
+                <td><br /></td> 
+                <tr>
+            <td><label>Address:</label></td>
+            <td><textarea></textarea> </td>
+                </tr>
+            </tr>
+            
+            <tr>
+
+            </tr>
+            <tr>
+                <td><label for="">Skills:</label></td>
+                <td>
+                    <input type="checkbox" name="skills" value="html" />HTML
+                    <input type="checkbox" name="skills" value="css" />CSS
+                    <input type="checkbox" name="skills" value="javascript" />JavaScript
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
